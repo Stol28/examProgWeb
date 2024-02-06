@@ -27,6 +27,7 @@ async function initGame() {
     if (isCorrect) {
       game.addPoint();
     }
+    input.value = "";
     game.displayNextCountry();
     scoreElement.textContent = `Score: ${game.currentScore}`;
 
