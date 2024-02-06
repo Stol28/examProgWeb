@@ -1,6 +1,7 @@
 "use strict";
-import { shuffle } from "lodash";
+
 import { Game } from "./modules/Games.js";
+import { shuffle } from "lodash";
 
 async function fetchCountries() {
   const response = await fetch("https://restcountries.com/v3.1/all");
@@ -18,7 +19,7 @@ async function initGame() {
   const scoreElement = document.getElementById("score");
   const highscoreElement = document.getElementById("highscore");
 
-  let highscore = localStorage.getItem("highscore") || 0;
+  const highscore = localStorage.getItem("highscore") || 0;
   highscoreElement.textContent = `Highscore: ${highscore}`;
 
   form.addEventListener("submit", (e) => {
