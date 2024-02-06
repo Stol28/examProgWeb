@@ -11,7 +11,7 @@ export class Country {
     }
   
     checkAnswer(submittedAnswer) {
-      return this.extractValidAnswers.has(submittedAnswer.toLowerCase());
+        return this.validAnswers.has(submittedAnswer.toLowerCase()) ? true : false;
     }
   
     get flag() {
