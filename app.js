@@ -1,5 +1,4 @@
 "use strict";
-
 import { Game } from "./modules/Games.js";
 import { shuffle } from "lodash";
 
